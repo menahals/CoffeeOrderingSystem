@@ -6,9 +6,9 @@ def Menu():
   print(":     Coffee     |        Size  and  Price        :")
   print(":.................................................:")
   print(":   Cappuccino   |                                :")
-  print(":   Latte        |        small   -  15AED        :")
-  print(":   Espresso     |        medium  -  20 AED       :")
-  print(":   Americano    |        large   -  25AED        :")
+  print(":   Latte        |        small   -  $15          :")
+  print(":   Espresso     |        medium  -  $20          :")
+  print(":   Americano    |        large   -  $25          :")
   print(":   Macchiato    |                                :")
   print("."*51)
 
@@ -67,11 +67,11 @@ def Order():
       additional_cost = 0
 
     total = price_size + additional_cost
-    print("Your total for this order is ", total, " AED.")
+    print("Your total for this order is $", total, ".")
 
     orders_total.append((coffee, size, topping, total))
   print(" ")
-  print("Total Cost for all orders: ", sum(order[3] for order in orders_total))
+  print("Total Cost for all orders: $", sum(order[3] for order in orders_total))
          
 #Press 7 to display invoice after ordering
   invoice = input("\nTo view the Invoice, please press 7.")
@@ -113,11 +113,11 @@ def Order():
         print("Toppings:                     ", orders_total[order][2])
         
         print("Additional Toppings:          ", max(0, len(orders_total[order][2]) - 3))
-        print("Cost for this order:          ", orders_total[order][3])
+        print("Cost for this order:         $", orders_total[order][3])
         
   print(" ")
   print("="*55)
-  print("Total Cost:                   ", sum(order[3] for order in orders_total))
+  print("Total Cost:                   $", sum(order[3] for order in orders_total))
   print("."*55)
   print("Thank you for shopping at The Coffee Shop! ")
 
