@@ -5,3 +5,5 @@ The Coffee Ordering System allows users to simulate basic coffee shop operations
 - Coffee selection with multiple sizes
 - Up to 3 free toppings per drink, with additional toppings costing $1
 - Provides detailed summary of the order and cost
+
+‼️Note: This project is shared for career-related purposes. If used for academic coursework, please follow your institution’s academic integrity policy.
